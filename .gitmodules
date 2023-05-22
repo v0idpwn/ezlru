@@ -1,3 +1,6 @@
 [submodule "priv/zlru"]
 	path = priv/zlru
 	url = git@github.com:v0idpwn/zlru.git
+[submodule "lib/zig_src"]
+	path = lib/zig_src
+	url = git@github.com:v0idpwn/zlru.git
