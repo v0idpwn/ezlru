@@ -10,11 +10,13 @@ jobs:
         pair:
           - otp-version: '25.0'
             elixir-version: '1.14'
-          - otp-version: '23.0'
-            elixir-version: '1.11'
+          - otp-version: '24.1'
+            elixir-version: '1.14'
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
     - uses: erlef/setup-beam@v1
       with:
         otp-version: ${{matrix.pair.otp-version}}
