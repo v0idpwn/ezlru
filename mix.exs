@@ -21,7 +21,7 @@ defmodule Ezlru.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:zigler, path: "../../zigler"}
+      {:zigler, path: "../../zigler", override: true}
     ]
   end
 end
