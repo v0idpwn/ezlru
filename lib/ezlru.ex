@@ -1,5 +1,5 @@
 defmodule Ezlru do
-  use Zig
+  use Zig, link_libc: true
 
   ~Z"""
   const lib_lru = @import("./zig_src/src/main.zig");
